@@ -11,6 +11,7 @@
   box-sizing: border-box;
 }
 body {
+    
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -55,14 +56,13 @@ button:hover {
   filter: brightness(0.9);
 }
 .lista{
-    margin-left: 21ch;
-    max-width: max-content;
     padding: 0.7rem 1.5rem;
     font-size: 4.0ch;
     display: block;
     margin-top: 1rem;
-    font-weight: bold;
-     background: var(--cor-principal);     
+    font-weight: bold;  
+   border: none;
+   border-radius: 6px;      
 }
 .excluir{
   margin-top: 1.25rem;
