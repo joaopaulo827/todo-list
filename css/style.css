@@ -1,0 +1,75 @@
+:root {
+  --cor-fundo: #28262b;
+  --cor-superficie: #ccc2ba;
+  --cor-texto: #e8ebf0;
+  --cor-principal: #304358;
+  --cor-perigo: #ac1414;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+}
+
+header{
+    margin: 0 auto;
+    font-size: 8.0ch;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: var(--cor-superficie);
+}
+form{
+    text-align: center;
+    color: var(--cor-texto);
+    
+}
+label{
+    font-size: 4.0ch;
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;    
+}
+input{
+ font-size: 2rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;    
+}
+.botao {
+  margin-top: 1.25rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  color: var(--cor-texto);
+  background: var(--cor-principal);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(0.9);
+}
+.lista{
+    margin-left: 21ch;
+    max-width: max-content;
+    padding: 0.7rem 1.5rem;
+    font-size: 4.0ch;
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+     background: var(--cor-principal);     
+}
+.excluir{
+  margin-top: 1.25rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;    
+  background: var(--cor-perigo);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
