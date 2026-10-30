@@ -1,6 +1,6 @@
 :root {
   --cor-fundo: #28262b;
-  --cor-borda:  #40216962;
+  --cor-borda:  #441b7a52;
   --cor-superficie: #ccc2ba;
   --cor-texto: #e8ebf0;
   --cor-principal: #304358;
@@ -31,7 +31,7 @@ header{
     margin-bottom: 20px;
     color: var(--cor-superficie);
 }
-form{
+#formulario{
     text-align: center;
     color: var(--cor-texto);
     
@@ -57,30 +57,51 @@ input{
 button:hover {
   filter: brightness(0.9);
 }
-.tarefa{
+#tarefas{
   padding: 0.7rem 1.5rem;
-  font-size: 4.0ch;
+  font-size: 3.0ch;
   display: block;
   margin-top: 1rem;
-  font-weight: bold;  
   border: none;
   border-radius: 6px;      
 }
+#tarefas .tarefa {
+    display: grid;
+    grid-template-columns: auto 60px;
+    justify-content: space-between;
+    width: 100%;
+}
+.tarefa h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.tarefa.concluida h3,
+.tarefa.concluida p {
+    text-decoration: line-through;
+}
+
+.tarefa .acoes {
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+}
+
+.tarefa .acoes .btn {
+    width: 25px;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+}
 .excluir{
-  margin-top: 1.25rem;
   padding: 0.7rem 1.5rem;
-  font-size: 1rem;    
-  background: var(--cor-perigo);
-  border: none;
-  border-radius: 6px;
+  font-size: 1rem;   
+  color: var(--cor-perigo); 
   cursor: pointer;
 }
 .concluir{
-  margin-top: 1.25rem;
   padding: 0.7rem 1.5rem;
   font-size: 1rem;    
-  background: var(--cor-sucesso);
-  border: none;
-  border-radius: 6px;
+  color: var(--cor-sucesso);
   cursor: pointer;
 }
