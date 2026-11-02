@@ -1,4 +1,4 @@
-:root {
+:root { 
   --cor-fundo: #28262b;
   --cor-borda:  #441b7a52;
   --cor-superficie: #ccc2ba;
@@ -32,7 +32,10 @@ header{
     color: var(--cor-superficie);
 }
 #formulario{
+    max-width: 500px;
+    margin: 0 auto;
     text-align: center;
+    justify-content: center;
     color: var(--cor-texto);
     
 }
