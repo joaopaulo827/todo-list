@@ -6,6 +6,7 @@
   --cor-principal: #304358;
   --cor-perigo: #ac1414;
   --cor-sucesso: #14a008;
+  --cor-editar: rgb(216, 230, 29);
 }
 body {
     background-color: var(--cor-fundo);
@@ -107,4 +108,10 @@ button:hover {
   font-size: 1rem;    
   color: var(--cor-sucesso);
   cursor: pointer;
+}
+.editar{
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;    
+  color: var(--cor-editar);
+  cursor: pointer;  
 }

@@ -67,6 +67,8 @@ function atualizarLista() {
       : `<button class="btn concluir" onclick="concluirTarefa(${index})">
             <i class="fa-solid fa-circle-check"></i>
         </button>
+        <button class="btn editar" onclick="editarTarefa(${index})">
+            <i class="fa-solid fa-pencil"></i>
         <button class="btn excluir" onclick="excluirTarefa(${index})">
             <i class="fa fa-times-circle"></i>
         </button>`;
@@ -95,3 +97,7 @@ const excluirTarefa = (index) => {
   lista.splice(index, 2);
   atualizarLista();
 };
+const editarTarefa = (index)=>{
+  
+  atualizarLista();
+}
