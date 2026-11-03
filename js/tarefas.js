@@ -38,7 +38,6 @@ function atualizarLista() {
     const [ano, mes, dia] = tarefa.data.split("-");
     const dataFormatada = `${dia}/${mes}/${ano}`;
 
-    // Cria o container da tarefa.
     const divTarefa = document.createElement("div");
     divTarefa.classList.add("tarefa");
 
